@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Connect4.MainPage">
+
+    <StackLayout x:Name="SLPage" Padding="0, 20, 0, 0">
+
+        <StackLayout x:Name="SLGameBoard"
+                     HorizontalOptions="Center" VerticalOptions="Center"
+                     BackgroundColor="LightBlue" >
+
+            <Grid x:Name="GrdGame" BackgroundColor="LightBlue"
+                  HeightRequest="300" WidthRequest="300" RowSpacing="25" ColumnSpacing="25">
+                <Grid.RowDefinitions>
+                    
+                    <!-- 6 rows by 7 columns equal in height and width-->
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+                </Grid.ColumnDefinitions>
+
+
+               </Grid>
+            
+            <!-- label and reset button-->
+
+            <Label x:Name="LblStatus" Text="" HorizontalOptions="Center" />
+
+            <Button x:Name="BtnReset" Text="New Game" HorizontalOptions="Center"
+                    Clicked="BtnReset_Clicked" />
+
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
